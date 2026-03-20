@@ -43,7 +43,7 @@ const App = () => {
       // setAvgTemperature(total / timeseries.length);
 
       // NOTE (ADDED AFTER INTERVIEW): in a real app we should type the entre data response from the backed
-      // we should avoid as any constructions and any definitions at all.
+      // we should avoid 'as any' constructions and 'any' definitions at all.
       // Used on the interview only to get the IDE autocomplete working
       const sum = (timeseries as any[])
         .map((item) => item.data.instant.details.air_temperature)
